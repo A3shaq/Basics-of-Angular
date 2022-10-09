@@ -1,5 +1,6 @@
-<h2>Parent Component</h2>
-
+<button class="btn btn-primary" [disabled] = "!allowNewServer" (click) = "onServerCreated()">Property Binding</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<h2>{{serverCreationStatus}}</h2>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
