@@ -11,6 +11,8 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No Server Was Created!'
   serverName = 'Test'
   serverCreated = false
+  servers = ["Server1", "Server2"]
+  logs:Array<number> = []
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -22,8 +24,14 @@ export class ServersComponent implements OnInit {
 
 
   onServerCreated() {
+    this.servers.push(this.serverName)
+
     this.serverCreated = true;
     this.serverCreationStatus = this.serverCreationStatus === 'Server Was Created!' ? `No Server Was Created! Name is ${this.serverName}` : `Server Was Created! Name is ${this.serverName}`
+  }
+
+  generateCount(){
+    this.logs.push(this.logs.length+1)
   }
 
   onUpdateServerName(event: any) {

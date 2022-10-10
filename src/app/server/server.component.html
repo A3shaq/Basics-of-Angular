@@ -1,1 +1,9 @@
-<p>Our {{'Custom'}} Server Component {{serverId}} in Angular and for now it {{getServerStatus()}}</p>
+<p
+  [ngStyle]="{
+    backgroundColor: getColor()
+  }"
+  [ngClass]="{online: serverStatus === 'online'}"
+>
+  Our {{ "Custom" }} Server Component {{ serverId }} in Angular and for now it
+  {{ getServerStatus() }}
+</p>
