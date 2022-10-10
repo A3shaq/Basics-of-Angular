@@ -29,6 +29,7 @@
 <p
   class="d-flex justify-content-center align-items-center"
   *ngFor="let log of logs"
+  [ngClass]="{ whiteText: log >=5}"
   [ngStyle]="{ backgroundColor: log >= 5 && 'blue' }"
 >
   {{ log }}
