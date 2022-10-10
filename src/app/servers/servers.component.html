@@ -1,7 +1,18 @@
-<button class="btn btn-primary" [disabled] = "!allowNewServer" (click) = "onServerCreated()">Property Binding</button>
+<label>Server Name</label>
+<!-- <input
+  placeholder="Enter Server Name"
+  class="form-control"
+  (input)="onUpdateServerName($event)"
+/> -->
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onServerCreated()"
+>
+  Property Binding
+</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
-<h2>{{serverCreationStatus}}</h2>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<h2>{{ serverCreationStatus }}</h2>
+<p>{{ serverName }}</p>
 <app-server></app-server>
