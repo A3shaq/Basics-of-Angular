@@ -1,18 +1,28 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-xs-12 my-3">
     <button class="btn btn-success">New Recipe</button>
   </div>
-
-  <div class="row">
+  <hr />
+  <div class="row mt-2">
     <div class="col-xs-12">
-      <a class="list-group-item clearfix">
-        <div class="pull-left">
-          <h4 class="list-group-item fw-bold">Recipe Name</h4>
-          <h4 class="list-group-item-text">Description</h4>
+      <a
+        href="#"
+        class="list-group-item clearfix border rounded p-2"
+        *ngFor="let recipe of recipes"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="pull-right">
+            <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+            <span class="list-group-item-text">{{ recipe.description }}</span>
+          </div>
+          <span class="pull-right">
+            <img
+              alt="{{ recipe.name }}"
+              src="{{ recipe.imagePath }}"
+              class="img-responsive"
+            />
+          </span>
         </div>
-        <span class="pull-right">
-          <img alt="no image found" src="https://img.jamieoliver.com/jamieoliver/recipe-database/136295678.jpg?tr=w-800,h-1066" class="img-responsive" style="width: 200px;">
-        </span>
       </a>
       <app-recipe-item></app-recipe-item>
     </div>
