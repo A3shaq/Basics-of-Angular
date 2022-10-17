@@ -46,11 +46,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">Recipes</a>
+          <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Recipes</a>
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
+          <a class="nav-link" routerLink="/shopping-list" routerLinkActive="active">Shopping List</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="recipes/details">Recipe Detail Page</a>
