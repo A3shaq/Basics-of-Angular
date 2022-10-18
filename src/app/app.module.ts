@@ -34,7 +34,7 @@ const appRoutes: Routes = [
 
 },
   {
-  path: 'recipes/details',
+  path: 'recipes/:id/:recipeName',
   component: RecipeDetailComponent,
   data: {
     id: 3,
