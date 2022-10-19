@@ -11,7 +11,12 @@ export class RecepiesComponent implements OnInit {
     id: String,
     recipeName: String
   }
-  data = "bruce"
+
+  data = {
+    name:'Arshaq',
+    age:25,
+    email:"arshaq@yopmail.com"
+  }
   constructor(private route: ActivatedRoute) {
   }
 

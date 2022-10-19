@@ -8,7 +8,7 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  @Input() hero = "test"
+  @Input() hero:any = {}
   // imageUrl : string = 'https://img.jamieoliver.com/jamieoliver/recipe-database/136295678.jpg?tr=w-800,h-1066'
   recipes: Recipe[] = [new Recipe("The Test Recipe", "Best things", 'https://img.jamieoliver.com/jamieoliver/recipe-database/136295678.jpg?tr=w-800,h-1066',),
   new Recipe("The Test Recipe", "Best things", 'https://img.jamieoliver.com/jamieoliver/recipe-database/136295678.jpg?tr=w-800,h-1066',)]
