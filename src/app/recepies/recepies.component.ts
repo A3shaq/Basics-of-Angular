@@ -11,15 +11,15 @@ export class RecepiesComponent implements OnInit {
     id: String,
     recipeName: String
   }
-
+  data = "bruce"
   constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
 
     this.recipeDetails = {
-      id:this.route.snapshot.params['id'],
-      recipeName:this.route.snapshot.params['recipeName'],
+      id: this.route.snapshot.params['id'],
+      recipeName: this.route.snapshot.params['recipeName'],
 
     }
 
