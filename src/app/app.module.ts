@@ -16,11 +16,17 @@ const appRoutes: Routes = [
   {
   path: '',
   component: RecepiesComponent,
-  data: {
-    id: 1,
-    name: "Arshaq",
-    age: 22
-  },
+  data:[
+    {
+      recipeName : "Biryani",
+
+    }
+  ]
+  // data: {
+  //   id: 1,
+  //   name: "Arshaq",
+  //   age: 22
+  // },
 
 },
   {
