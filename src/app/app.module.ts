@@ -10,45 +10,45 @@ import { RecipeItemComponent } from './recepies/recipe-list/recipe-item/recipe-i
 import { RecipeDetailComponent } from './recepies/recipe-detail/recipe-detail.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { Routes,RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
   {
-  path: '',
-  component: RecepiesComponent,
-  data:[
-    {
-      recipeName : "Biryani",
+    path: '',
+    component: RecepiesComponent,
+    data: [
+      {
+        recipeName: "Biryani",
 
-    }
-  ]
-  // data: {
-  //   id: 1,
-  //   name: "Arshaq",
-  //   age: 22
-  // },
+      }
+    ]
+    // data: {
+    //   id: 1,
+    //   name: "Arshaq",
+    //   age: 22
+    // },
 
-},
-  {
-  path: 'shopping-list',
-  component: ShoppingListComponent,
-  data: {
-    id: 2,
-    name: "Rahim",
-    age: 25
   },
-
-},
   {
-  path: 'recipes/:id/:recipeName',
-  component: RecipeDetailComponent,
-  data: {
-    id: 3,
-    name: "RecipeDetailComponent",
-    age: 55
-  },
+    path: 'shopping-list',
+    component: ShoppingListComponent,
+    data: {
+      id: 2,
+      name: "Rahim",
+      age: 25
+    },
 
-},
+  },
+  {
+    path: 'recipes/:id/:recipeName',
+    component: RecipeDetailComponent,
+    data: {
+      id: 3,
+      name: "RecipeDetailComponent",
+      age: 55
+    },
+
+  },
 ]
 
 @NgModule({
